@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require ./embergolf_rails
+
+// for more details see: http://emberjs.com/guides/application/
+EmbergolfRails = Ember.Application.create();
