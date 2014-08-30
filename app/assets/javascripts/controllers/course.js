@@ -4,6 +4,8 @@ App.CourseController = Ember.ObjectController.extend({
 	  return this.get('isDirty') && !this.get('isSaving')
 	}.property('isDirty', 'isSaving'),
 
+	isEditing: false,
+
   actions: {
     saveChanges: function() {
       this.get('model').save();
