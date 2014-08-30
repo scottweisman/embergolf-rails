@@ -20,4 +20,5 @@
 //= require ./embergolf_rails
 
 // for more details see: http://emberjs.com/guides/application/
-EmbergolfRails = Ember.Application.create();
+// EmbergolfRails = Ember.Application.create(rootElement: '#ember-app');
+App = Ember.Application.create({rootElement: '#ember-app'});

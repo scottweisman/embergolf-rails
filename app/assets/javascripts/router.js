@@ -1,12 +1,15 @@
 // For more information see: http://emberjs.com/guides/routing/
 
 // Turn off # in url
-EmbergolfRails.Router.reopen({
-  location: 'history'
+App.Router.reopen({
+  location: 'auto',  // uses history or hash depending on browser support
+	rootURL: '/'
 });
 
 
-EmbergolfRails.Router.map(function() {
-	this.route('about');
+App.Router.map(function() {
+	this.resource('courses', { path: '/' }, function() {
+		this.resource('course', { path: 'course/:id'});
+	});
 });
 

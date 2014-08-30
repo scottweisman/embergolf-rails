@@ -1,0 +1,2 @@
+article#lead
+	h1= model.name

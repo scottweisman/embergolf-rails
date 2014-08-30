@@ -1,0 +1,9 @@
+article#leads
+	h1 Courses
+	ul
+		each course in controller
+			link-to 'course' course tagName="li"
+				course.name
+
+
+outlet
