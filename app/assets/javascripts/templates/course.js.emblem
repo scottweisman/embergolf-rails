@@ -1,2 +1,16 @@
+outlet
+
 article#lead
-	h1= model.name
+	h1
+		model.name
+		link-to 'edit' 'course.edit' model classNames='edit'
+
+/ p
+/   label Description:
+/   br
+/   view Ember.TextArea value=model.description
+
+/ p
+/   input type='submit' value='Save Changes' click='saveChanges'
+/   if showUnsavedMessage
+/     .unsaved unsaved changes

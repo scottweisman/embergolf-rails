@@ -49,7 +49,7 @@ GEM
       handlebars-source (> 1.0.0)
       jquery-rails (>= 1.0.17)
       railties (>= 3.1)
-    ember-source (1.5.0)
+    ember-source (1.7.0)
       handlebars-source (~> 1.0)
     emblem-rails (0.2.1)
       barber-emblem (~> 0.1.1)
@@ -69,12 +69,14 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
-    minitest (5.4.0)
+    minitest (5.4.1)
     multi_json (1.10.1)
     pg (0.17.1)
     polyglot (0.3.5)
-    puma (1.6.3)
-      rack (~> 1.2)
+    puma (2.9.0)
+      rack (>= 1.1, < 2.0)
+    quiet_assets (1.0.3)
+      railties (>= 3.1, < 5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -137,12 +139,13 @@ PLATFORMS
 
 DEPENDENCIES
   ember-rails
-  ember-source (= 1.5.0)
+  ember-source (= 1.7.0)
   emblem-rails
   ffaker
   jquery-rails
   pg
   puma
+  quiet_assets
   rails (= 4.1.5)
   rails_12factor
   sass-rails (~> 4.0.3)

@@ -23,12 +23,12 @@ class Api::V1::CoursesController < ApplicationController
 
   private
 
-    def lead
+    def course
       Course.find(params[:id])
     end
 
-    def lead_params
-      params.require(:course).permit(:name)
+    def course_params
+      params.require(:course).permit(:name, :description)
     end
 
 end

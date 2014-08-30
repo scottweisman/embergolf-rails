@@ -10,12 +10,13 @@ gem 'jquery-rails'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
+gem 'quiet_assets', group: :development
 gem 'ffaker'
 gem 'puma'
 
 # Ember
 gem 'ember-rails'
-gem 'ember-source', '1.5.0'
+gem 'ember-source', '1.7.0'
 gem 'emblem-rails'
 
 group :production, :staging do

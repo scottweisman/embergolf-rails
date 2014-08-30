@@ -1,8 +1,10 @@
+puts 'Seeding...'
+
 Course.destroy_all
 # Review.destroy_all
 
 pebble = Course.create(name: 'Pebble Beach')
-augusta = Course.create(name: 'August National')
+augusta = Course.create(name: 'Augusta National')
 torry = Course.create(name: 'Torry Pines')
 
 # pebble.reviews.create(content: "I was very lucky to visit here in 2011 as part of a trip from Classic & Sports Car, pebble beach concours d'elegance. WOW the view from the 18th hole is spectacular. the people that attend this event are so nice and polite. if you are on your own someone will come up to you and befriend you straight away. they will then introduce you to all of their friends and you end up having a few drinks and sharing a few laughs.")
@@ -14,3 +16,6 @@ torry = Course.create(name: 'Torry Pines')
 
 # torry.reviews.create(content: "You will not find a more economical course where you can play the same course as the pros. Booked about a month in advance, paid the $43 booking fee (per person) to guarantee a time. Played the north course with only $100 green fees. Even though the south course is more famous as it hosted a US Open in 2008 (and will again in 2021), it is more expensive to play and all the locals I talked to preferred the north course (more scenic and it is the easier of the two).")
 # torry.reviews.create(content: "Played the South course. Pay the extra money to get a tee time in advance to be sure you get on the course. Easy to walk, fantastic views and a real challenge. Great experience!")
+
+
+puts 'Datebase seeded.'

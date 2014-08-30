@@ -9,7 +9,9 @@ App.Router.reopen({
 
 App.Router.map(function() {
 	this.resource('courses', { path: '/' }, function() {
-		this.resource('course', { path: 'course/:id'});
-	});
+		this.resource('course', { path: '/courses/:id' }, function() {
+			this.route('edit')
+		})
+	})
 });
 

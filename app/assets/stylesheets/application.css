@@ -52,7 +52,7 @@ body {
 }
 
 a, a:visited, a:active {
-  color: #236fff;
+  color: #393;
   text-decoration: none;
 }
 
@@ -89,7 +89,7 @@ a.delete {
 }
 
 header {
-  background: #f57011;
+  background: #393;
   height: 47px;
 }
 
@@ -182,7 +182,7 @@ article#leads ul li {
 }
 
 article#leads ul li:hover, article#leads ul li.active {
-  background: #f8e5ce;
+  background: #d9f2d9;
 }
 
 article#lead {
@@ -223,7 +223,7 @@ label {
 }
 
 input[type='submit'] {
-  background: #f57011;
+  background: #393;
   border: none;
   padding: 5px 25px 8px;
   font-weight: 500;
