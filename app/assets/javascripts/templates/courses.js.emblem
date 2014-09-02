@@ -1,7 +1,7 @@
 article#courses
 	h1
-	| Courses
-	link-to 'courses.new' | New Course
+		| Courses
+		link-to 'courses.new' | New Course
 	view Ember.TextField value=search placeholder="search" classNames="search"
 
 	ul
