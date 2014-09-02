@@ -1,5 +1,7 @@
-article#leads
-	h1 Courses
+article#courses
+	h1
+	| Courses
+	link-to 'courses.new' | New Course
 	ul
 		each course in controller
 			link-to 'course' course tagName="li"

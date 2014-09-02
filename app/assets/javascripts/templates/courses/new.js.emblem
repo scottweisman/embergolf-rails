@@ -1,0 +1,18 @@
+article#course
+  h1 New Course
+
+  if showError
+    .error Courses must have a name and description.
+
+  form
+    fieldset
+      dl
+        dt: label Name:
+        dd: view Ember.TextField value=fields.name
+
+      dl
+        dt: label Description:
+        dd: view Ember.TextArea value=fields.description
+
+    fieldset.actions
+      input type='submit' value='Create Course' click="createCourse"

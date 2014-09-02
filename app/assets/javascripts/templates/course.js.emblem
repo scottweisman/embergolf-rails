@@ -1,7 +1,7 @@
 outlet
 
 unless isEditing
-	article#lead
+	article#course
 		h1
 			model.name
 			link-to 'edit' 'course.edit' model classNames='edit'
