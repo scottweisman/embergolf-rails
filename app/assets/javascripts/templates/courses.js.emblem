@@ -2,8 +2,10 @@ article#courses
 	h1
 	| Courses
 	link-to 'courses.new' | New Course
+	view Ember.TextField value=search placeholder="search" classNames="search"
+
 	ul
-		each course in controller
+		each course in courses
 			link-to 'course' course tagName="li"
 				course.name
 
