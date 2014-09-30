@@ -16,3 +16,13 @@ unless isEditing
 		  if showUnsavedMessage
 		    .unsaved unsaved changes
 		  a.delete href='#' click="delete" delete
+
+		div.reviews
+			ul
+				each reviews
+					li.review = content
+
+		p
+			view Ember.TextArea value=model.content
+
+
